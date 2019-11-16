@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Attacker.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/GitHub/Glitch Garden1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -83,6 +84,15 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/GitHub/Glitch Garden1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/GitHub/Glitch Garden1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/GitHub/Glitch Garden1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/GitHub/Glitch Garden1/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/UnityClient/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
