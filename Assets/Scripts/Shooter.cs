@@ -5,10 +5,10 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     [SerializeField] private GameObject _projectile;
-    [SerializeField] private Transform _gunPosition;
+    [SerializeField] private GameObject _gun;
 
    public void Shoot()
    {
-        Instantiate(_projectile, _gunPosition.transform.position, transform.rotation);
+        Instantiate(_projectile, _gun.transform.position, transform.rotation);
    }
 }
