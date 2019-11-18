@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Attacker : MonoBehaviour
 {
-    [Range(0f, 5f)]
     private float _currentSpeed = 1.25f;
 
     private void Update()
