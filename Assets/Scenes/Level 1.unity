@@ -186,7 +186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 618a69db00702294d8859ef68edff3ac, type: 2}
+  - {fileID: 2100000, guid: c2aee76184afac84ca9d35afd855555e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1060,12 +1060,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395063372}
   m_CullTransparentMesh: 0
---- !u!1 &1453718929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4488584851585549810, guid: 44683d74f58a1bb45951b0e8e97e5323,
-    type: 3}
-  m_PrefabInstance: {fileID: 3211572086318509313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1483079140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,8 +1254,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: d59e0630265694349b7db065f955ecbb, type: 3}
-  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a7fddefae1ee14347821a8ca8a674fdf, type: 3}
+  m_Color: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1280,9 +1274,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1657952221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098653a3623720649a7dda1bca193ed4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a41d28f588691e44a4cc227f6a81766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defenderPrefab: {fileID: 9094280307176075541, guid: a8861f9e8579f7848a8250b6a7ce5a45,
+    type: 3}
 --- !u!1 &1826198756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,10 +1306,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826198756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76734953bf79e874abd22ac74d7024b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cf7b205d907efc47b9d59938358798c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cactus: {fileID: 1453718929}
 --- !u!61 &1826198758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1517,9 +1512,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042958570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098653a3623720649a7dda1bca193ed4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a41d28f588691e44a4cc227f6a81766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defenderPrefab: {fileID: 4033159645650210783, guid: 44683d74f58a1bb45951b0e8e97e5323,
+    type: 3}
 --- !u!61 &2042958573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1680,12 +1677,12 @@ PrefabInstance:
     - target: {fileID: 6236435410449710392, guid: a8861f9e8579f7848a8250b6a7ce5a45,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.97
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6236435410449710392, guid: a8861f9e8579f7848a8250b6a7ce5a45,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.82
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6236435410449710392, guid: a8861f9e8579f7848a8250b6a7ce5a45,
         type: 3}
