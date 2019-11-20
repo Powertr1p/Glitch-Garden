@@ -8,7 +8,8 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Spawn(GetClickedPosition());
+        if (_defender != null)
+            Spawn(GetClickedPosition());
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)
@@ -36,6 +37,5 @@ public class DefenderSpawner : MonoBehaviour
     private void Spawn(Vector2 spawnPosition)
     {
         Defender newDefender = Instantiate(_defender, spawnPosition, Quaternion.identity) as Defender;
-        Debug.Log(spawnPosition);
     }
 }
