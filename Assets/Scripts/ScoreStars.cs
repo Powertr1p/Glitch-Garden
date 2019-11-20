@@ -5,32 +5,32 @@ using UnityEngine.UI;
 
 public class ScoreStars : MonoBehaviour
 {
-    private int _starsCount
-    {
-        get
-        {
-            return _starsCount;
-        }
-        set
-        {
-            _starsCount = value;
-            if (_starsCount <= 0)
-                _starsCount = 0;
-        }
-    }
+    private int _starsCount = 100;
     private Text _starText;
 
-    private void Update()
+    private void Start()
     {
         _starText = GetComponent<Text>();
+        UpdateDisplay();
+    }
+
+    private void UpdateDisplay()
+    {
+        _starText.text = _starsCount.ToString();
     }
 
     public void AddStars(int amountStars)
     {
-        _starText.text = (_starsCount + amountStars).ToString();
+        _starsCount += amountStars;
+        UpdateDisplay();
     }
+
     public void SpendStars(int amountStars)
     {
-        _starText.text = (_starsCount - amountStars).ToString();
+        if (_starsCount >= amountStars)
+        { 
+            _starsCount -= amountStars;
+            UpdateDisplay();
+        }
     }
 }
