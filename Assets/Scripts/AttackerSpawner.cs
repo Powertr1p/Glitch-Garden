@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _lizard;
+    [SerializeField] private Attacker _attackerPrefab;
     [SerializeField] private float _minSpawnDelay = 1f;
     [SerializeField] private float _maxSpawnDelay = 5f;
 
@@ -21,7 +21,8 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        Instantiate(_lizard, transform.position, Quaternion.identity);
+        Attacker newAttacker = Instantiate(_attackerPrefab, transform.position, transform.rotation) as Attacker;
+        newAttacker.transform.parent = transform;
     }
 
 }
