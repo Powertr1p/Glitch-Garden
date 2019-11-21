@@ -19,6 +19,11 @@ public class ScoreStars : MonoBehaviour
         _starText.text = _starsCount.ToString();
     }
 
+    public bool HaveEnoughStars(int amount)
+    {
+        return _starsCount >= amount;
+    }
+
     public void AddStars(int amountStars)
     {
         _starsCount += amountStars;
