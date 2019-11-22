@@ -130,7 +130,8 @@ AnimationClip:
   - time: 0
     functionName: SetMovementSpeed
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 6285677817461481039, guid: c4adafec79f5c5d4687d2a1758af7716,
+      type: 3}
     floatParameter: 1.25
     intParameter: 0
     messageOptions: 0

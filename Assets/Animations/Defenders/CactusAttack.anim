@@ -906,7 +906,8 @@ AnimationClip:
   - time: 1.0416666
     functionName: Shoot
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 4488584851585549810, guid: 44683d74f58a1bb45951b0e8e97e5323,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
