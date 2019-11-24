@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 7250272660537709750}
   - component: {fileID: 7250272660537709749}
   - component: {fileID: 7250272660537709748}
+  - component: {fileID: 842387982652530131}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -220,3 +221,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _starCost: 200
+--- !u!114 &842387982652530131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250272660537709747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb63fdbdd8bb79d4b85bdcb40f1f3faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
