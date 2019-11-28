@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class AttackerSpawner : MonoBehaviour
 {
@@ -10,6 +9,11 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] private float _maxSpawnDelay = 5f;
 
     private bool _spawn = true;
+
+    private void Awake()
+    {
+        FindObjectOfType<GameTimerSlider>().OnTimesOut += StopSpawning;
+    }
 
     private IEnumerator Start()
     {
@@ -30,6 +34,11 @@ public class AttackerSpawner : MonoBehaviour
     private Attacker PickAttacker()
     {
         return _attackersPrefabs[Random.Range(0, _attackersPrefabs.Length)];
+    }
+
+    private void StopSpawning()
+    {
+        _spawn = false;
     }
 
 }

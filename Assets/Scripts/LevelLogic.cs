@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class LevelLogic : MonoBehaviour
 { 
-
     private int _numberOfAttacker = 0;
     private bool _levelTimerFinished = false;
+
+    private void Awake()
+    {
+        FindObjectOfType<GameTimerSlider>().OnTimesOut += LevelEnded;
+    }
 
     private void CountAliveAttackers()
     {
@@ -26,4 +30,11 @@ public class LevelLogic : MonoBehaviour
         attacker.OnSpawn += CountAliveAttackers;
         attacker.OnDeath += DecreaseAttackerCount;
     }
+
+    private void LevelEnded()
+    {
+        _levelTimerFinished = true;
+    }
+
+
 }
