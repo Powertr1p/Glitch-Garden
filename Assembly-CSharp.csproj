@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Gravestone.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\LevelLogic.cs" />
     <Compile Include="Assets\Scripts\Lizard.cs" />
     <Compile Include="Assets\Scripts\PlayerLivesDisplay.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />

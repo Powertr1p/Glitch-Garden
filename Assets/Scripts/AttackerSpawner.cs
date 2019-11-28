@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AttackerSpawner : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class AttackerSpawner : MonoBehaviour
     {
         Attacker newAttacker = Instantiate(PickAttacker(), transform.position, transform.rotation) as Attacker;
         newAttacker.transform.parent = transform;
+        FindObjectOfType<LevelLogic>().AddListenersToNewAttacker(newAttacker);
     }
 
     private Attacker PickAttacker()

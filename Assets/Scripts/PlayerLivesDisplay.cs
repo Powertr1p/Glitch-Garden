@@ -24,10 +24,5 @@ public class PlayerLivesDisplay : MonoBehaviour
     {
         _lives -= _damageToPlayer;
         UpdateDisplay();
-
-        if (_lives <= 0)
-        {
-            FindObjectOfType<LevelLoader>().LoseScreen();
-        }
     }
 }

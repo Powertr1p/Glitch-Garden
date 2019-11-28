@@ -5,8 +5,16 @@ using UnityEngine.Events;
 
 public class Attacker : MonoBehaviour
 {
+    public UnityAction OnSpawn;
+    public UnityAction OnDeath;
+
     private float _currentSpeed = 1.25f;
     private GameObject _currentTarget;
+
+    private void Start()
+    {
+        OnSpawn?.Invoke();
+    }
 
     private void Update()
     {
@@ -40,5 +48,10 @@ public class Attacker : MonoBehaviour
 
         if (health)
             health.ApplyDamage(damage);
+    }
+
+    private void OnDestroy()
+    {
+        OnDeath?.Invoke();
     }
 }

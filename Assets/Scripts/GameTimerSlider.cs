@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameTimerSlider : MonoBehaviour
 {
+    public event UnityAction TimesOut;
+
     [Tooltip("Level duration in seconds")]
     [SerializeField] private float _levelTime = 10f;
 
@@ -14,6 +17,6 @@ public class GameTimerSlider : MonoBehaviour
 
         bool timerFinished = (Time.timeSinceLevelLoad >= _levelTime);
         if (timerFinished)
-            Debug.Log("Timer Finished");
+            TimesOut?.Invoke();
     }
 }
