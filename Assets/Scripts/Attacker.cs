@@ -52,7 +52,6 @@ public class Attacker : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (OnDeath != null)
-            OnDeath.Invoke();
+            OnDeath?.Invoke();
     }
 }
