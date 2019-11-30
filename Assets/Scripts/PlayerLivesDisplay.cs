@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PlayerLivesDisplay : MonoBehaviour
 {
+    public UnityAction OnPlayerDeath;
+
     [SerializeField] private int _lives = 10;
     [SerializeField] private int _damageToPlayer = 1;
     private Text _livesText;
@@ -24,5 +27,8 @@ public class PlayerLivesDisplay : MonoBehaviour
     {
         _lives -= _damageToPlayer;
         UpdateDisplay();
+
+        if (_lives <= 0)
+            OnPlayerDeath.Invoke();
     }
 }

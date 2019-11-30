@@ -13,7 +13,7 @@ public class GameTimerSlider : MonoBehaviour
     {
         GetComponent<Slider>().value = Time.timeSinceLevelLoad / _levelTime;
 
-        bool timerFinished = (Time.timeSinceLevelLoad >= _levelTime);
+        bool timerFinished = (Time.timeSinceLevelLoad >= _levelTime -2f);
         if (timerFinished)
             OnTimesOut?.Invoke();
     }
