@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelLogic : MonoBehaviour
-{ 
+{
+    [SerializeField] GameObject _winLabel;
+    [SerializeField] float _waitToLoad = 5f;
+
     private int _numberOfAttacker = 0;
     private bool _levelTimerFinished = false;
+
+
 
     private void Awake()
     {
         FindObjectOfType<GameTimerSlider>().OnTimesOut += LevelEnded;
+        _winLabel.SetActive(false);
     }
 
     private void CountAliveAttackers()
@@ -22,7 +28,18 @@ public class LevelLogic : MonoBehaviour
         _numberOfAttacker--;
 
         if (_numberOfAttacker <= 0 && _levelTimerFinished)
-            Debug.Log("END LEVEL PLS");
+            StartCoroutine(HandleWinCondition());
+    }
+
+    private IEnumerator HandleWinCondition()
+    {
+        _winLabel.SetActive(true);
+        GetComponent<AudioSource>().Play();
+
+        yield return new WaitForSeconds(_waitToLoad);
+
+        FindObjectOfType<LevelLoader>().LoadNextScene();
+ 
     }
 
     public void AddListenersToNewAttacker(Attacker attacker)
