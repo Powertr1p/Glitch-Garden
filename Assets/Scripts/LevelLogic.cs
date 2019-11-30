@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class LevelLogic : MonoBehaviour
 {
-    [SerializeField] GameObject _winLabel;
-    [SerializeField] GameObject _loseLabel;
-    [SerializeField] float _waitToLoad = 5f;
+    [SerializeField] private GameObject _winLabel;
+    [SerializeField] private GameObject _loseLabel;
+    [SerializeField] private float _waitToLoad = 5f;
 
     private int _numberOfAttacker = 0;
     private bool _levelTimerFinished = false;
