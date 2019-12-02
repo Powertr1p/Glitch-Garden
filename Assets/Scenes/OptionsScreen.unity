@@ -1514,75 +1514,6 @@ MonoBehaviour:
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1001 &1399007050
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5407290957079456358, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_Name
-      value: MusicPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 553.7735
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 339.7389
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -174.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407290957079456352, guid: 893ba5eead20a094897597d271f5a44c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 893ba5eead20a094897597d271f5a44c, type: 3}
 --- !u!1 &1483079140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,7 +1867,7 @@ PrefabInstance:
     - target: {fileID: 7094195131662935820, guid: cf0f5d4797f3531498eed76b6a179615,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7094195131662935820, guid: cf0f5d4797f3531498eed76b6a179615,
         type: 3}
