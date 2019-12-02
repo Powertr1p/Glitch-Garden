@@ -8,13 +8,17 @@ public class PlayerLivesDisplay : MonoBehaviour
 {
     public UnityAction OnPlayerDeath;
 
-    [SerializeField] private int _lives = 10;
+    [SerializeField] private float _baseLives = 3;
     [SerializeField] private int _damageToPlayer = 1;
+
+    private float _lives;
     private Text _livesText;
 
     private void Start()
     {
+        _lives = _baseLives - PlayerPrefsController.GetDifficulty();
         _livesText = GetComponent<Text>();
+
         UpdateDisplay();
     }
 
