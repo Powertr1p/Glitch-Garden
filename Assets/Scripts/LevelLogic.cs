@@ -11,6 +11,8 @@ public class LevelLogic : MonoBehaviour
     private int _numberOfAttacker = 0;
     private bool _levelTimerFinished = false;
 
+    private bool _isGameLost = false;
+
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -31,7 +33,7 @@ public class LevelLogic : MonoBehaviour
     {
         _numberOfAttacker--;
 
-        if (_numberOfAttacker <= 0 && _levelTimerFinished)
+        if (_numberOfAttacker <= 0 && _levelTimerFinished && !_isGameLost)
             StartCoroutine(HandleWinCondition());
     }
 
@@ -58,6 +60,7 @@ public class LevelLogic : MonoBehaviour
 
     private void HandleLoseCondition()
     {
+        _isGameLost = true;
         _loseLabel.SetActive(true);
         Time.timeScale = 0f;
     }

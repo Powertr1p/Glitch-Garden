@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreStars : MonoBehaviour
 {
-    private int _starsCount = 500;
+    private int _starsCount = 700;
     private Text _starText;
 
     private void Start()
